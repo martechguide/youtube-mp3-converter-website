@@ -1,0 +1,592 @@
+/* YouTube MP3 Converter Styles */
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.yt-mp3-converter {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.yt-mp3-converter h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.url-input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.url-input-group .form-control {
+    padding-left: 3rem;
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+    transition: border-color 0.3s ease;
+}
+
+.url-input-group .form-control:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.url-input-group .input-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+    z-index: 5;
+}
+
+.convert-btn {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.convert-btn:hover {
+    background: linear-gradient(135deg, #c82333, #a71e2a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3);
+}
+
+.convert-btn:disabled {
+    background: #6c757d;
+    transform: none;
+    box-shadow: none;
+}
+
+.video-info {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid #dc3545;
+    display: none;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+/* Advertisement Sections */
+.ad-banner {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    margin: 1.5rem 0;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.ad-banner:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.ad-sidebar {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+    border: 2px dashed #dee2e6;
+}
+
+/* Fake Download Buttons */
+.fake-download-btn {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white !important;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+}
+
+.fake-download-btn:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+    color: white !important;
+}
+
+.fake-download-section {
+    background: #e8f5e8;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    border: 2px solid #28a745;
+}
+
+/* Improve text visibility */
+.alert {
+    color: #2c3e50 !important;
+    font-weight: 600 !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    border-color: #2c3e50 !important;
+}
+
+.alert h6 {
+    color: #2c3e50 !important;
+    font-weight: 700 !important;
+}
+
+.alert-info {
+    background: rgba(209, 236, 241, 0.95) !important;
+    color: #0c5460 !important;
+    border-color: #0c5460 !important;
+}
+
+.alert-warning {
+    background: rgba(255, 243, 205, 0.95) !important;
+    color: #856404 !important;
+    border-color: #856404 !important;
+}
+
+.feature-title {
+    color: #2c3e50 !important;
+    font-weight: 700 !important;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+}
+
+.feature-description {
+    color: #2c3e50 !important;
+    font-weight: 600 !important;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+}
+
+/* Enhanced banner ads */
+.ad-banner-large {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24, #ff9ff3, #54a0ff);
+    background-size: 400% 400%;
+    animation: gradientShift 3s ease infinite;
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin: 2rem 0;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    font-size: 1.2rem;
+}
+
+.ad-banner-large:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.ad-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    cursor: pointer;
+    font-weight: 600;
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+/* Status message styling */
+.status-message {
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    font-weight: 600;
+    color: #2c3e50 !important;
+}
+
+.status-message.info {
+    background: #d1ecf1;
+    border: 1px solid #bee5eb;
+    color: #0c5460 !important;
+}
+
+.status-message.success {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724 !important;
+}
+
+.status-message.error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24 !important;
+}
+
+/* Progress bar improvements */
+.progress {
+    height: 8px;
+    background: #e9ecef;
+    border-radius: 10px;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #28a745, #20c997);
+    transition: width 0.3s ease;
+    border-radius: 10px;
+}
+
+/* Download button styling */
+.download-btn {
+    background: linear-gradient(135deg, #dc3545, #c82333) !important;
+    color: white !important;
+    padding: 15px 40px !important;
+    border-radius: 30px !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    font-weight: 700 !important;
+    font-size: 1.2rem !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3) !important;
+    border: 3px solid #fff !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5) !important;
+}
+
+.download-btn:hover {
+    background: linear-gradient(135deg, #c82333, #a71e2a) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 6px 20px rgba(220, 53, 69, 0.4) !important;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+/* Download section styling */
+#downloadSection {
+    background: rgba(40, 167, 69, 0.95) !important;
+    color: white !important;
+    padding: 2rem !important;
+    border-radius: 12px !important;
+    margin: 2rem 0 !important;
+    border: 2px solid #28a745 !important;
+}
+
+#downloadSection h3 {
+    color: white !important;
+    font-weight: 700 !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5) !important;
+    margin-bottom: 1rem !important;
+}
+
+#downloadSection p {
+    color: white !important;
+    font-weight: 600 !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5) !important;
+    font-size: 1.1rem !important;
+}
+
+/* Video info styling */
+.video-info {
+    background: rgba(52, 58, 64, 0.95) !important;
+    color: white !important;
+    padding: 1.5rem !important;
+    border-radius: 8px !important;
+    margin: 1rem 0 !important;
+    border: 2px solid #495057 !important;
+}
+
+.video-info h5, .video-info h6 {
+    color: white !important;
+    font-weight: 700 !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.video-info p, .video-info span, .video-info .video-title, .video-info .video-duration {
+    color: white !important;
+    font-weight: 700 !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+    margin: 0 !important;
+    font-size: 1.1rem !important;
+}
+
+.video-title {
+    color: white !important;
+    font-weight: 700 !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+    font-size: 1.2rem !important;
+}
+
+.video-duration {
+    color: #f8f9fa !important;
+    font-weight: 600 !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+    font-size: 1rem !important;
+}
+
+/* Container improvements */
+.container {
+    padding: 1rem;
+}
+
+.video-info.show {
+    display: block;
+    animation: slideIn 0.5s ease;
+}
+
+.video-thumbnail {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.video-details h5 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.video-meta {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.progress {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #e9ecef;
+    margin: 1rem 0;
+    display: none;
+}
+
+.progress.show {
+    display: block;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #dc3545, #ff6b7a);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.status-message {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+.status-message.info {
+    background: #cce7ff;
+    color: #0066cc;
+    border: 1px solid #99d6ff;
+}
+
+.status-message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status-message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.download-section {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #28a745, #20c997);
+    border-radius: 12px;
+    color: white;
+    display: none;
+}
+
+.download-section.show {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+.download-btn {
+    background: white;
+    color: #28a745;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 2.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.download-btn:hover {
+    background: #f8f9fa;
+    color: #28a745;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #dc3545;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    border-color: #dc3545;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: white;
+}
+
+.feature-title {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.feature-description {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .yt-mp3-converter {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .video-info .d-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .video-thumbnail {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .yt-mp3-converter {
+        background: #1a1a1a;
+        color: #e9ecef;
+    }
+    
+    .video-info {
+        background: #2d3748;
+        color: #e9ecef;
+    }
+    
+    .feature-item {
+        background: #2d3748;
+        color: #e9ecef;
+    }
+    
+    .feature-item:hover {
+        background: #4a5568;
+    }
+}
